@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -77,10 +78,10 @@ WSGI_APPLICATION = 'Shared_Finances.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'sfinancesdb',
-       'USER': 'jjimeenz',
-       'PASSWORD': 'jjimenez',
-       'HOST': 'localhost',
+       'NAME': 'xxbtdbbf',
+       'USER': 'xxbtdbbf',
+       'PASSWORD': 'nSXbIxb-V9YPSMOzHI8M_f6gMX7VV3uR',
+       'HOST': 'kashin.db.elephantsql.com',
        'PORT': '5432',
        'CONN_MAX_AGE': 0
    }

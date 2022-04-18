@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Expenses_Account(models.Model):
+class ExpensesAccount(models.Model):
     id_account = models.AutoField(primary_key=True, null=False, unique=True, verbose_name='ID Account')
     ch_name = models.CharField(verbose_name='Name', max_length=100)
     ch_description = models.CharField(verbose_name='Description', max_length=500)
@@ -23,7 +23,7 @@ class Expenses(models.Model):
     ch_description = models.CharField(verbose_name='Description', max_length=500)
     b_State = models.BooleanField(verbose_name='State')
     dt_Start_Date = models.DateTimeField(verbose_name='Start Date')
-    fk_expenses_account = models.ForeignKey(Expenses_Account, on_delete=models.CASCADE, verbose_name='FK Expenses')
+    fk_expenses_account = models.ForeignKey(ExpensesAccount, on_delete=models.CASCADE, verbose_name='FK Expenses')
     
     class Meta:
         verbose_name = 'expense'

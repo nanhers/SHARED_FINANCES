@@ -25,8 +25,10 @@ SECRET_KEY = '5r)sqe*4615+w85rs3r!#qv&2p!nhcgn$6t=(i!1ds(n+z6m)8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*'] #de donde acepto conexiones
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 # Application definition
 
